@@ -2,7 +2,7 @@ const faker = require("faker");
 
 const appRouter = (app) => {
     app.get('/',  (req, res) => {
-        res.status(200).send("Welcome to a restful API");
+        res.status(200).send("Welcome to a restful API<br/>Checkout<a href=\"/user\">/user</a>");
     });
 
     // NOTE: Creates a single user
